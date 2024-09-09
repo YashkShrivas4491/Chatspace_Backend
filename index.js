@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://chat-space-frontend-gamma.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
@@ -18,7 +18,7 @@ const PORT = 8080;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://chat-space-frontend-gamma.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   })
